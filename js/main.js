@@ -71,7 +71,7 @@ var sommaNum = numUt + numAI
 console.log('la somma dei numeri è: ' + sommaNum);
 
 // Stabiliamo se il numero risultante dalla somma è pari o dispari
-if (pariDispari(sommaNum) == 'pari') {
+if (pariDispari(sommaNum) == true) {
     var resParDis = 'pari';
 } else {
     var resParDis = 'dispari';
@@ -95,9 +95,9 @@ function randomNumAi (min, max) {
 }
 
 function pariDispari(num) {
-    if (num % 2 ==0) {
-        return 'pari'
+    if (num % 2 == 0) {
+        return true;
     } 
 
-    return 'dispari'
+    return false;
 }
